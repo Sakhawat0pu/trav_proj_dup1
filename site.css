@@ -96,7 +96,8 @@ h1#name {
 section#planets,
 section#characters,
 section#films,
-section#planets-ind {
+section#planets-ind,
+section#films-ind {
 	margin: 50px;
 }
 
@@ -164,7 +165,8 @@ section#films a {
 }
 
 #characters #char-container,
-#planets #planet-container {
+#planets #planet-container,
+#films-ind #film-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 40px;
@@ -172,7 +174,8 @@ section#films a {
 }
 
 #char-container h3,
-#planet-container h3 {
+#planet-container h3,
+#film-container h3 {
 	font-size: 25px;
 	background-color: var(--light2);
 	color: var(--dark2);
