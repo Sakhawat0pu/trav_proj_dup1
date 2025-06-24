@@ -6,167 +6,176 @@ h3,
 h4,
 h5,
 p {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
-  font-family: Arial, Helvetica, sans-serif;
-  --dark1: black;
-  --light1: white;
-  --dark2: darkblue;
-  --light2: lightblue;
-  background-color: var(--light1);
-  color: var(--dark1);
+	font-family: Arial, Helvetica, sans-serif;
+	--dark1: black;
+	--light1: white;
+	--dark2: darkblue;
+	--light2: lightblue;
+	background-color: var(--light1);
+	color: var(--dark1);
 }
 
 button {
-  background-color: var(--light2);
-  color: var(--dark2);
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--dark2);
+	background-color: var(--light2);
+	color: var(--dark2);
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid var(--dark2);
 }
 
 input {
-  display: block;
-  width: 95%;
-  font-weight: bold;
-  font-size: 1.1em;
-  line-height: 1.5em;
-  border: none;
-  border-bottom: 2px solid var(--dark2);
-  outline: none;
-  margin: 5px;
+	display: block;
+	width: 95%;
+	font-weight: bold;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	border: none;
+	border-bottom: 2px solid var(--dark2);
+	outline: none;
+	margin: 5px;
 }
 
 label {
-  font-weight: bold;
-  font-size: 1.1em;
+	font-weight: bold;
+	font-size: 1.1em;
 }
 
 .small {
-  font-size: small;
-  font-weight: normal;
+	font-size: small;
+	font-weight: normal;
 }
 
 /* Characters */
 #charactersList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0;
 }
 
 #charactersList div {
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid var(--dark2);
-  border-radius: 5px;
-  color: var(--dark2);
-  background-color: var(--light2);
-  font-weight: bold;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid var(--dark2);
+	border-radius: 5px;
+	color: var(--dark2);
+	background-color: var(--light2);
+	font-weight: bold;
 }
 
 /* Character page */
 h1#name {
-  margin: 50px;
+	margin: 50px;
 }
 
 #generalInfo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 20px;
 }
 
 #generalInfo p {
-  padding: 20px;
-  margin: 10px;
-  color: var(--dark2);
-  background-color: var(--light2);
+	padding: 20px;
+	margin: 10px;
+	color: var(--dark2);
+	background-color: var(--light2);
 }
 
 #generalInfo span {
-  font-weight: bold;
-  font-size: 1.1em;
+	font-weight: bold;
+	font-size: 1.1em;
 }
 
 section#planets,
 section#characters,
-section#films {
-  margin: 50px;
+section#films,
+section#planets-ind {
+	margin: 50px;
 }
 
 section#planets ul,
 section#characters ul,
 section#films ul {
-  list-style-type: none;
-  padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
 section#planets a,
 section#characters a,
 section#films a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.1em;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.1em;
 
-  background-color: var(--light2);
-  color: var(--dark2);
-  font-weight: bold;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--dark2);
+	background-color: var(--light2);
+	color: var(--dark2);
+	font-weight: bold;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid var(--dark2);
 }
 
-#films {
-    margin-bottom: 60px;
+#films,
+#planets-ind {
+	margin-bottom: 60px;
 }
 
-#films #film-title {
-    font-size: 70px;
-    margin-bottom: 60px;
+#films #film-title,
+#planets-ind #planet-title {
+	font-size: 70px;
+	margin-bottom: 60px;
 }
 
-#films #film-info {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#films #film-info,
+#planets-ind #planet-info {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-#films p{
-    font-size: 25px;
-    background-color: var(--light2);
-    color: var(--dark2);
-    padding: 20px 40px;
-    border: 1px solid var(--dark2);
-    border-radius: 5px;
+#films p,
+#planets-ind p {
+	font-size: 25px;
+	background-color: var(--light2);
+	color: var(--dark2);
+	padding: 20px 40px;
+	border: 1px solid var(--dark2);
+	border-radius: 5px;
 }
 
-#characters h1, #planets h1 {
-    font-size: 50px;
-    margin-bottom: 40px;
+#characters h1,
+#planets h1 {
+	font-size: 50px;
+	margin-bottom: 40px;
 }
 
-#char-container, #planet-container {
-    margin-left: 50px;
-    margin-right: 50px;
+#char-container,
+#planet-container {
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
-#characters #char-container, #planets #planet-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 40px;
-    row-gap: 20px;
+#characters #char-container,
+#planets #planet-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 40px;
+	row-gap: 20px;
 }
 
-#char-container h3, #planet-container h3{
-    font-size: 25px;
-    background-color: var(--light2);
-    color: var(--dark2);
-    padding: 20px 40px;
-    border: 1px solid var(--dark2);
+#char-container h3,
+#planet-container h3 {
+	font-size: 25px;
+	background-color: var(--light2);
+	color: var(--dark2);
+	padding: 20px 40px;
+	border: 1px solid var(--dark2);
 }
