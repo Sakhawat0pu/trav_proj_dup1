@@ -63,6 +63,12 @@ function showCharacters(data) {
 	const h1 = document.createElement("h1");
 	h1.innerText = "Characters";
 	charDiv.appendChild(h1);
+	if (data.length === 0){
+		const h4 = document.createElement("h4");
+		h4.innerText = "No Character Data Available";
+		charDiv.appendChild(h4);
+		return;
+	}
 
 	const characterContainer = document.createElement("div");
 	characterContainer.setAttribute("id", "char-container");
@@ -82,6 +88,12 @@ function showPlanets(data) {
 	const h1 = document.createElement("h1");
 	h1.innerText = "Planets";
 	planetDiv.appendChild(h1);
+	if (data.length === 0){
+		const h4 = document.createElement("h4");
+		h4.innerText = "No Planet Data Available";
+		planetDiv.appendChild(h4);
+		return;
+	}
 
 	const planetContainer = document.createElement("div");
 	planetContainer.setAttribute("id", "planet-container");

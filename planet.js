@@ -12,30 +12,30 @@ async function getData(url) {
 	}
 }
 
-function getPlanetData(id) {
+async function getPlanetData(id) {
 	if (id) {
 		const url = `http://localhost:9001/api/planets/${id}`;
-		const data = getData(url);
+		const data = await getData(url);
 		showPlanets(data);
 	} else {
 		alert("Something went wrong!");
 	}
 }
 
-function getFilmData(id) {
+async function getFilmData(id) {
 	if (id) {
 		const url = `http://localhost:9001/api/planets/${id}/films`;
-		const data = getData(url);
+		const data = await getData(url);
 		showFilmData(data);
 	} else {
 		alert("Something went wrong!");
 	}
 }
 
-function getCharacterData(id) {
+async function getCharacterData(id) {
 	if (id) {
 		const url = `http://localhost:9001/api/planets/${id}/characters`;
-		const data = getData(url);
+		const data = await getData(url);
 		showCharacters(data);
 	} else {
 		alert("Something went wrong!");
@@ -60,6 +60,12 @@ function showFilmData(data) {
 	const h1 = document.createElement("h1");
 	h1.innerText = "Films";
 	filmDiv.appendChild(h1);
+	if (data.length === 0){
+		const h4 = document.createElement("h4");
+		h4.innerText = "No Films Data Available";
+		filmDiv.appendChild(h4);
+		return;
+	}
 
 	const filmContainer = document.createElement("div");
 	filmContainer.setAttribute("id", "film-container");
@@ -79,6 +85,12 @@ function showCharacters(data) {
 	const h1 = document.createElement("h1");
 	h1.innerText = "Characters";
 	charDiv.appendChild(h1);
+	if (data.length === 0){
+		const h4 = document.createElement("h4");
+		h4.innerText = "No Character Data Available";
+		charDiv.appendChild(h4);
+		return;
+	}
 
 	const characterContainer = document.createElement("div");
 	characterContainer.setAttribute("id", "char-container");
